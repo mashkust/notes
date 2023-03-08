@@ -1,13 +1,11 @@
 import { Box } from "@mui/material";
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
 
 import List from "./components/list/list";
 import Menu from "./components/menu/menu";
 import PageForm from "./components/page-form/page-form";
 import { useAppSelector } from "./hooks/hooks";
 import { NOTES, sessionKey } from "./const";
-// import { setNotesSession } from "./store/note-data";
 
 function App(): JSX.Element {
   const formOpen = useAppSelector((DATA) => DATA.formOpen);
